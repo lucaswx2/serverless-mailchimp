@@ -1,0 +1,17 @@
+{
+  "name": "mago-mailchimp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "invoke:local": "sls invoke local -f sendLead --path requests-mock/lead.insert.json"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "axios": "^0.21.1",
+    "md5": "^2.3.0"
+  },
+  "devDependencies": {
+    "serverless-dotenv-plugin": "^3.9.0"
+  }
+}

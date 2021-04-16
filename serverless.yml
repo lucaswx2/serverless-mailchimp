@@ -1,0 +1,22 @@
+service: send-lead
+app: send-lead
+
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  stage: prod
+  region: us-east-1
+
+
+
+functions:
+  sendLead:
+    handler: handler.default
+    events:
+      - httpApi:
+          path: /sendlead
+          method: post

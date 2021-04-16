@@ -1,0 +1,3 @@
+{
+  "body": "{\"merge_fields\": { \"FNAME\":\"Jhon Doe\",\"PHONE\": \"+5599888345562\"},\"email_address\":\"fake@mail.com\"}"
+}
